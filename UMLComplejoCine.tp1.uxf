@@ -1,0 +1,50 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>994</x><y>307</y><w>230</w><h>90</h></coordinates><panel_attributes>Espectador
+--
+- apellido: String
+- nombre: String
+--
++ guardarTicket(Ticket): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>934</x><y>797</y><w>240</w><h>50</h></coordinates><panel_attributes>Ticket
+--
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>494</x><y>757</y><w>260</w><h>90</h></coordinates><panel_attributes>Butaca
+--
+-id: int
+-flagDisponibilidad:boolean
+--
++ estaDisponible():boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>324</x><y>167</y><w>320</w><h>120</h></coordinates><panel_attributes>Cine
+--
+- direccion: String
+- id: int
+--
++ comprarEntrada(Espectador,String): void
+- buscarFunciones(String):  List&lt;Funcion&gt;
+- generarTicket(Funcion,Espectador): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>364</x><y>377</y><w>160</w><h>60</h></coordinates><panel_attributes>Sala
+--
+- id: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>94</x><y>207</y><w>150</w><h>50</h></coordinates><panel_attributes>ComplejoDeCine
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>674</x><y>137</y><w>160</w><h>90</h></coordinates><panel_attributes>Pelicula
+--
+-titulo: String
+--
++getTitulo():String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>644</x><y>527</y><w>330</w><h>100</h></coordinates><panel_attributes>Funcion
+--
+-hora:String
+-dia:String
+--
++coincideTituloPeliculaYhayButacaDisponible():boolean
++ solicitardarDeBajaAlgunaButaca():void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>207</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>10;20;90;30</additional_attributes></element><element><id>Relation</id><coordinates><x>694</x><y>217</y><w>40</w><h>330</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;310;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>894</x><y>617</y><w>60</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;190</additional_attributes></element><element><id>Relation</id><coordinates><x>1034</x><y>387</y><w>30</w><h>430</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;410</additional_attributes></element><element><id>Relation</id><coordinates><x>484</x><y>427</y><w>40</w><h>350</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;20;330</additional_attributes></element><element><id>Relation</id><coordinates><x>484</x><y>277</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+ </panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>504</x><y>217</y><w>200</w><h>180</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>180;10;180;140;10;140;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>804</x><y>217</y><w>200</w><h>600</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;120;180;120;180;580</additional_attributes></element><element><id>Relation</id><coordinates><x>204</x><y>247</y><w>160</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+-cines</panel_attributes><additional_attributes>120;40;120;90;10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>374</x><y>427</y><w>140</w><h>420</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+-butacasDisponibles
+</panel_attributes><additional_attributes>120;390;10;390;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>514</x><y>277</y><w>150</w><h>370</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+-funciones</panel_attributes><additional_attributes>130;340;10;340;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1114</x><y>387</y><w>60</w><h>430</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+-ticket</panel_attributes><additional_attributes>10;410;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>514</x><y>427</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;100</additional_attributes></element></diagram>
