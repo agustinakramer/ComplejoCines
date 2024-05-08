@@ -1,0 +1,45 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>130</x><y>170</y><w>180</w><h>90</h></coordinates><panel_attributes>Ticket
+--
+--
++ addItem(Producto, int): void
+- calcPrecioTotal(): float
++ imprimir(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>570</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;Composite&gt;
+/ProductoCompuesto/
+--
+- nombre: String
+_- DESCUENTO: float = 0.1f_
+-
++ addProducto(Producto): void
++ removeProducto(Producto): void
++ mostrar(): void
++ getPrecio(): float
+- calcPrecioTotal(): float
+- calcDto(double): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>360</y><w>180</w><h>90</h></coordinates><panel_attributes>&lt;Interface&gt;
+/Producto/
+--
+--
+/+ mostrar(): void/
+/+ getPrecio(): float/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>250</y><w>90</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+- items
+m2= 1..n
+</panel_attributes><additional_attributes>30;10;30;120;50;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>180</y><w>180</w><h>90</h></coordinates><panel_attributes>Cliente
+--
+--
++ addItem(Producto, int): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>390</y><w>350</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+- producto
+m2= 1..n
+</panel_attributes><additional_attributes>330;180;330;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>200</y><w>300</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;280;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>340</y><w>180</w><h>90</h></coordinates><panel_attributes>Item
+--
+- cantidad: int
+--
++ mostrar(): void
+- calcularPrecio(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>360</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+- producto
+m2= 1
+</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>570</y><w>180</w><h>100</h></coordinates><panel_attributes>&lt;Leaf&gt;
+ProductoIndividual
+--
+- nombre: String
+--
++ mostrar(): void
++ getPrecio(): float</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>260</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>440</y><w>30</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>490</y><w>360</w><h>100</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;340;10;340;80</additional_attributes></element></diagram>
