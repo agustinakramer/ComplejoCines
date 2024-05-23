@@ -13,7 +13,7 @@
 --
 + obtenerDireccion(decimal,decimal): String
 + convertirFormatoServicio(GoogleMaps): void
-+ convertirFormatoValores(decimal): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>330</y><w>30</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>570</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>270</y><w>210</w><h>70</h></coordinates><panel_attributes>Mapeador
+- convertirFormatoValores(decimal): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>330</y><w>30</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>570</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>270</y><w>210</w><h>70</h></coordinates><panel_attributes>Mapeador
 --
 + field: type
 --
