@@ -9,6 +9,7 @@
 --
 - nombre: String
 _- DESCUENTO: float = 0.1f_
+- algoritmo: Algoritmo
 -
 + addProducto(Producto): void
 + removeProducto(Producto): void
