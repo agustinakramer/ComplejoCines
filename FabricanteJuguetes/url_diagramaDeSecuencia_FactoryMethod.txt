@@ -1,2 +1,0 @@
-Diagrama de secuencia Factory Method:
-https://www.plantuml.com/plantuml/uml/VP0n3i8m34Ltdo8Z35oW0oeCR9LwXK_YmH9DYkFs_9X2XnQ99VdwUI-9t5Q3sZGyQFHTeep85cwugqG4r3LkZZiy9ycup58oLwTspGPUEcS-WOZMoq_ddTQ4KRbwX5wBbNmu_cCJgxA9TZ1MGQyom8qjzXQNs8Ie3Esrf2bQSH3HP7Rt-wzb_Ns74kz0efPpyecz0000
